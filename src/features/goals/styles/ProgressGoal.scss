@@ -1,0 +1,27 @@
+.goal-progress-container {
+    @apply flex flex-col items-center w-full h-full px-4 py-2 lg:px-[32px] lg:py-[40px];
+    border-radius: 6px;
+    border: 1px solid #D0D2D6;
+}
+
+.goal-title {
+    @apply flex flex-col;
+}
+
+.CircularProgressbar-text {
+    @apply text-h2;
+}
+
+.home-career-document-gap {
+    @apply flex w-full;
+}
+
+.left-section {
+    @apply flex flex-col items-center lg:w-1/2;
+    gap: 24px;
+}
+
+.right-section {
+    @apply flex flex-col items-start lg:w-1/2;
+    gap: 24px;
+}

@@ -1,0 +1,75 @@
+.header-container {
+	@apply w-full flex items-center justify-end py-2;
+}
+.sidebar-icon-container {
+	@apply w-full h-[60px] flex items-center justify-center transition-colors;
+
+	&:hover {
+		@apply bg-grey-400;
+	}
+}
+
+.sidebar-container {
+	@apply flex flex-col items-center gap-2 w-full;
+}
+
+.sidebar-icon {
+	@apply w-full h-[24px];
+	filter: none;
+
+	.sidebar-icon-container:hover {
+		filter: grayscale(100%) brightness(0%) invert(1);
+	}
+}
+
+.icon-active {
+	@apply bg-grey-400;
+	.sidebar-icon {
+		filter: grayscale(100%) brightness(0%) invert(1);
+	}
+}
+
+.header-user {
+	@apply flex items-center gap-2 cursor-pointer p-2;
+  
+	&:hover,
+	&.header-user-active {
+	  @apply bg-grey-80;
+	  outline: 1px solid #493df5;
+	  border-radius: 4px;
+	}
+  }
+  
+.username-panel {
+	@apply  flex gap-4 items-center p-3;
+}
+
+.username-panel .p-avatar {
+    width: 40px;  
+    height: 40px; 
+    line-height: 40px; 
+    font-size: 20px; 
+}
+
+.p-overlaypanel {
+    position: absolute;
+    top: 100%; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+.overlay-panel {
+	@apply bg-white h-full;
+	border-radius: 4px;
+	padding: 12px;
+	box-shadow: 0px 0px 10px 0px #00000026;
+	max-width: 280px; 
+}
+
+.logout-text {
+	@apply flex gap-2 text-grey-300 px-3 py-2 items-center cursor-pointer hover:bg-grey-80 rounded-lg;
+}
+
+.login-layout {
+	@apply w-full bg-grey-80;
+}
