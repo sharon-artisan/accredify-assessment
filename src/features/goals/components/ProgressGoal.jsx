@@ -5,9 +5,7 @@ import "react-circular-progressbar/dist/styles.css";
 import careerGoalJson from "../../../data/careerGoal.json";
 import { formatIndefiniteArticle } from "../../../utils/formatIndefiniteArticle.js";
 
-const percentage = careerGoalJson.data[0].progress;
-const careerGoalName = careerGoalJson.data[0].name;
-const careerGoalDescription = careerGoalJson.data[0].description;
+
 
 const CircularProgress = ({ value }) => {
 	return (
@@ -29,6 +27,11 @@ const CircularProgress = ({ value }) => {
 };
 
 export default function ProgressGoal({ showLink, showDetails }) {
+
+	const percentage = careerGoalJson.data[0].progress;
+	const careerGoalName = careerGoalJson.data[0].name;
+	const careerGoalDescription = careerGoalJson.data[0].description;
+
 	return (
 		<>
 			<div className="home-career-document-gap">

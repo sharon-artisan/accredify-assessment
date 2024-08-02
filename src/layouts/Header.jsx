@@ -8,12 +8,14 @@ import { formatInitials } from "../utils/formatInitials.js";
 import { OverlayPanel } from "primereact/overlaypanel";
 import { Divider } from "primereact/divider";
 import LogoutIcon from "../assets/icons/icon_logout.svg";
-const userName = userJson.data.name;
-const initials = formatInitials(userName);
+
 
 export default function Header() {
+	const userName = userJson.data.name;
 	const openHeaderPanel = useRef(null);
 	const [isPanelOpen, setIsPanelOpen] = useState(false);
+
+	const initials = formatInitials(userName);
 
 	const handlePanelToggle = (e) => {
 		setIsPanelOpen(!isPanelOpen);

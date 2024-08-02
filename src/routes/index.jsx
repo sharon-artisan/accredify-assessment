@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import Sidebar from '../layouts/Sidebar.jsx';
 import ErrorPage from "../error-page.jsx";
 import Home from '../pages/Home.jsx';
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       children: [
         {
           index: true,
-          element: <Sidebar />
+          element: <Navigate to="/home" replace />
         },
         {
             path: "home",

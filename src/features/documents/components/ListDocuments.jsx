@@ -9,15 +9,17 @@ import kebabIcon from "../../../assets/icons/icon_kebab.svg";
 import { OverlayPanel } from "primereact/overlaypanel";
 import { Button } from 'primereact/button';
 
-const actions = [
-  { icon: "pi pi-download", text: "Download", action: "download" },
-  { icon: "pi pi-pencil", text: "Edit", action: "edit" },
-  { icon: "pi pi-trash", text: "Delete", action: "delete" },
-];
+
 
 export default function ProgressGoal({ showLink }) {
   const openMoreItems = useRef(null);
   const [isPanelOpen, setIsPanelOpen] = useState(false);
+
+  const actions = [
+    { icon: "pi pi-download", text: "Download", action: "download" },
+    { icon: "pi pi-pencil", text: "Edit", action: "edit" },
+    { icon: "pi pi-trash", text: "Delete", action: "delete" },
+  ];
 
   const handlePanelToggle = (e) => {
     setIsPanelOpen(!isPanelOpen);
