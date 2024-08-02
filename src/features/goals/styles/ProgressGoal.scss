@@ -22,6 +22,11 @@
 }
 
 .right-section {
-    @apply flex flex-col items-start lg:w-1/2;
+    @apply flex flex-col lg:w-1/2 text-center items-center sm:items-start sm:text-start;
     gap: 24px;
+}
+
+.goal-type {
+    @apply px-4 py-1 bg-grey-300 text-white text-meta;   
+    border-radius: 20px;
 }

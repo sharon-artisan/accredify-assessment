@@ -1,3 +1,6 @@
+/* 
+    This is to format name into initials
+*/
 export function formatInitials(name) {
     if (!name) return '';
 

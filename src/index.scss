@@ -67,3 +67,11 @@ body {
   justify-content: center;
   width: 100%;
 }
+
+.spinner-container {
+  @apply m-auto;
+}
+
+.p-progress-spinner-circle {
+  stroke: #493DF5 !important;
+}

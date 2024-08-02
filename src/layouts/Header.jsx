@@ -1,17 +1,18 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./styles/layouts.scss";
 import { Avatar } from "primereact/avatar";
 import chevronDown from "../assets/icons/icon_chevron_down.svg";
-import userJson from "../data/user.json";
 import { formatInitials } from "../utils/formatInitials.js";
 import { OverlayPanel } from "primereact/overlaypanel";
 import { Divider } from "primereact/divider";
 import LogoutIcon from "../assets/icons/icon_logout.svg";
-
+import { useUserData } from "../hooks/useUserData.js";
 
 export default function Header() {
-	const userName = userJson.data.name;
+    const { userData } = useUserData();
+
+	const userName = userData?.record?.data?.name;
 	const openHeaderPanel = useRef(null);
 	const [isPanelOpen, setIsPanelOpen] = useState(false);
 

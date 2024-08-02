@@ -8,7 +8,14 @@ function Login() {
   
     return (
       <>
-        <AuthenticationFeature />
+        <div className="login-page">
+			<div className="home-container h-[50px]">
+				<div className="home-user-container">
+					<span className="home-title">Login</span>
+				</div>			
+			</div>
+			  <AuthenticationFeature />
+		</div>
       </>
     );
   }

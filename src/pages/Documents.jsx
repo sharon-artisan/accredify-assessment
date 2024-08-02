@@ -7,9 +7,15 @@ function Documents() {
   }, []);
   
     return (
-      <>
-        <DocumentsFeature />
-      </>
+      <div className="home-container">
+				<div className="home-user-container">
+					<span className="home-title">📄 Documents</span>
+				</div>
+
+				<div>
+					<DocumentsFeature />
+				</div>
+			</div>
     );
   }
   

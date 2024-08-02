@@ -1,6 +1,5 @@
 import React from 'react';
 import { createBrowserRouter, Navigate } from 'react-router-dom';
-import Sidebar from '../layouts/Sidebar.jsx';
 import ErrorPage from "../error-page.jsx";
 import Home from '../pages/Home.jsx';
 import Documents from '../pages/Documents.jsx';
