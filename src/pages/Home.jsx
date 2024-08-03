@@ -14,7 +14,7 @@ function Home() {
 	if (loading) {
 		return (
 			<div className="home-container">
-				<div className="spinner-container">
+				<div role="status" className="spinner-container">
 					<ProgressSpinner
 						style={{ width: "100px", height: "100px" }}
 						strokeWidth="5"
@@ -40,7 +40,7 @@ function Home() {
 				<span className="home-title">Hi, {name} 👋</span>
 				<span className="home-description">
 					{!isPersonal
-						? "  Manage your documents issued by SMU Academy or track your career goal. "
+						? " Manage your documents issued by SMU Academy or track your career goal."
 						: "Manage your documents"}
 				</span>
 			</div>

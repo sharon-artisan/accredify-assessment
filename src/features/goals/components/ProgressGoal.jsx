@@ -33,7 +33,7 @@ export default function ProgressGoal({ showLink, showDetails }) {
 	if (loading) {
 		return (
 			<div className="home-container">
-				<div className="spinner-container">
+				<div role="status" className="spinner-container">
 					<ProgressSpinner style={{width: '100px', height: '100px'}} strokeWidth="5" />
 				</div>
 			</div>

@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/ListDocuments.scss";
 import { formatDate } from "../../../utils/formatDate.js";
 import { Divider } from "primereact/divider";
 import documentFilledIcon from "../../../assets/icons/icon_documents_filled.svg";
@@ -9,6 +8,7 @@ import { OverlayPanel } from "primereact/overlaypanel";
 import { Button } from "primereact/button";
 import { useUserDocuments } from "../../../hooks/useUserDocuments.js";
 import { ProgressSpinner } from "primereact/progressspinner";
+import "../styles/ListDocuments.scss";
 
 export default function ProgressGoal({ showLink }) {
 	const { userDocumentsData, loading, error } = useUserDocuments();
@@ -54,7 +54,7 @@ export default function ProgressGoal({ showLink }) {
 	if (loading) {
 		return (
 			<div className="home-container">
-				<div className="spinner-container">
+				<div role="status" className="spinner-container">
 					<ProgressSpinner
 						style={{ width: "100px", height: "100px" }}
 						strokeWidth="5"
@@ -85,7 +85,7 @@ export default function ProgressGoal({ showLink }) {
 						</Link>
 					)}
 				</div>
-				<div className="list-documents-container">
+				<div id="list-documents" className="list-documents-container">
 					<div className="list-documents-header">
 						<span className="list-first-column text-h6 text-grey-300">
 							Document Name

@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 
 function Goals() {
 	useEffect(() => {
-		document.title = "Home | Accredify";
+		document.title = "Goals | Accredify";
 	}, []);
 
 	return (

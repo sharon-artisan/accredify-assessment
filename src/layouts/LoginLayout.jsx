@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 const LoginLayout = ({ children }) => {
     return (
-      <div className="login-layout">
+      <div role="login-layout" className="login-layout">
          <Outlet />
       </div>
     );

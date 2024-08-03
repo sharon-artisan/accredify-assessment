@@ -18,27 +18,33 @@ const router = createBrowserRouter([
       children: [
         {
           index: true,
-          element: <Navigate to="/home" replace />
+          element: <Navigate to="/home" replace />,
+          name: 'Home',
         },
         {
             path: "home",
             element: <Home />,
+            name: 'Home',
         },
         {
             path: "documents",
             element: <Documents />,
+            name: 'Documents',
         },
         {
             path: "goals",
             element: <Goals />,
+            name: 'Goals',
         },
         {
             path: "verify",
             element: <Verify />,
+            name: 'Verify',
         },
         {
             path: "settings",
             element: <Settings />,
+            name: 'Settings',
         },
       ],
     },
@@ -50,6 +56,7 @@ const router = createBrowserRouter([
         {
           index: true,
           element: <Login />,
+          name: 'Login',
         },
       ],
     }

@@ -37,6 +37,7 @@ export default function Sidebar() {
 							image={avatarImage}
 							size="xlarge"
 							shape="circle"
+							aria-label="Default avatar"
 						/>
 					) : (
 						<Avatar
@@ -47,6 +48,7 @@ export default function Sidebar() {
 								backgroundColor: "#493DF5",
 								color: "#ffffff",
 							}}
+							aria-label="Avatar with initials"
 						/>
 					)}
 				</div>

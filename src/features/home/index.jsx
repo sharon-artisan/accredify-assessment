@@ -4,7 +4,7 @@ import RecentDocuments from "../documents/components/ListDocuments.jsx";
 import { useUserData } from "../../hooks/useUserData.js";
 
 export default function HomeFeature() {
-	const { userData, loading, error } = useUserData();
+	const { userData } = useUserData();
 	const isPersonal = userData?.record?.data?.current_organisation?.is_personal;
 	
 	return (

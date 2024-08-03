@@ -10,7 +10,7 @@ import LogoutIcon from "../assets/icons/icon_logout.svg";
 import { useUserData } from "../hooks/useUserData.js";
 
 export default function Header() {
-    const { userData } = useUserData();
+	const { userData } = useUserData();
 
 	const userName = userData?.record?.data?.name;
 	const openHeaderPanel = useRef(null);
@@ -65,16 +65,16 @@ export default function Header() {
 
 						<Divider className="divider my-4" />
 
-							<Link to={`/login`}>
-						<div className="logout-text">
+						<Link to={`/login`}>
+							<div className="logout-text">
 								<img
 									src={LogoutIcon}
 									alt="Logout Icon"
 									className="w-[16px] h-[16px]"
 								/>
 								<span className="text-meta">Log out</span>
-						</div>
-							</Link>
+							</div>
+						</Link>
 					</div>
 				</OverlayPanel>
 			</div>
