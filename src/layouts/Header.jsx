@@ -25,7 +25,7 @@ export default function Header() {
 
 	return (
 		<div className="header-container">
-			<div
+			<div id="account-settings"
 				className={`header-user ${
 					isPanelOpen ? "header-user-active" : ""
 				}`}
@@ -66,7 +66,7 @@ export default function Header() {
 						<Divider className="divider my-4" />
 
 						<Link to={`/login`}>
-							<div className="logout-text">
+							<div id="logout-button" className="logout-text">
 								<img
 									src={LogoutIcon}
 									alt="Logout Icon"

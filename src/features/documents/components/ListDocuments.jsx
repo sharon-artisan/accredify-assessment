@@ -76,7 +76,7 @@ export default function ProgressGoal({ showLink }) {
 
 	return (
 		<>
-			<div className="home-career-document-gap">
+			<div id="list-documents" className="home-career-document-gap">
 				<div className="list-documents-title-container">
 					<h1 className="text-h4">Recent Documents</h1>
 					{showLink && (
@@ -85,7 +85,7 @@ export default function ProgressGoal({ showLink }) {
 						</Link>
 					)}
 				</div>
-				<div id="list-documents" className="list-documents-container">
+				<div className="list-documents-container">
 					<div className="list-documents-header">
 						<span className="list-first-column text-h6 text-grey-300">
 							Document Name

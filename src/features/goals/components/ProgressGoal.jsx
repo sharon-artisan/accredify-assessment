@@ -59,7 +59,7 @@ export default function ProgressGoal({ showLink, showDetails }) {
 				<p>No goals available</p>
 			) : (
 				goals.map((goal, index) => (
-					<div key={index} className="goal-progress-container">
+					<div id="career-goal" key={index} className="goal-progress-container">
 						<div
 							className={`flex w-full gap-4 ${
 								showDetails
