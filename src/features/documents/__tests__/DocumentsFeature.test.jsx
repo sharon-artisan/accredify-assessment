@@ -1,7 +1,8 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import DocumentsFeature from "../index.jsx";
+import { BrowserRouter as Router } from "react-router-dom";
+import { DocumentsFeature } from "../index.jsx";
 
 jest.mock("../../documents/components/ListDocuments.jsx", () => ({
 	__esModule: true,
@@ -10,10 +11,18 @@ jest.mock("../../documents/components/ListDocuments.jsx", () => ({
 
 describe("DocumentsFeature", () => {
 	test("renders without crashing", () => {
-		render(<DocumentsFeature />);
+		render(
+			<Router>
+				<DocumentsFeature />
+			</Router>
+		);
 	});
 	test("renders RecentDocuments component", () => {
-		render(<DocumentsFeature />);
+		render(
+			<Router>
+				<DocumentsFeature />
+			</Router>
+		);
 
 		expect(screen.getByText("RecentDocuments")).toBeInTheDocument();
 	});

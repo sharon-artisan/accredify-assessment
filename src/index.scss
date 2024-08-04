@@ -60,6 +60,25 @@ body {
 #secondary-cta {
   @apply text-h6 text-primary-purple cursor-pointer;
 }
+.home-container {
+  @apply max-w-[1400px] mx-auto px-4 flex flex-col gap-12 h-full;
+}
+
+.home-user-container {
+  @apply flex flex-col gap-2;
+}
+
+.home-title {
+  @apply text-h2;
+}
+
+.home-description {
+  @apply text-p text-grey-300;
+}
+
+.home-career-document-gap {
+  @apply flex flex-col gap-4;
+}
 #error-page {
   display: flex;
   flex-direction: column;

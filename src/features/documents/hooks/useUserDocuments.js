@@ -1,19 +1,19 @@
 /*
-    This hook is used to get the user goals from the API.
+    This hook is used to get the user documents from the API.
     This will be used and called in multiple places so I created it as a hook.
 */
 import { useEffect, useState } from 'react';
-import { getUserCareerGoals } from "../services/dataServices.js";
+import { getUserDocuments } from "../services/documentsServices.js";
 
-export function useUserGoals() {
-    const [userGoalsData, setUserGoalsData] = useState(null);
+export function useUserDocuments() {
+    const [userDocumentsData, setUserDocumentsData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        getUserCareerGoals()
+        getUserDocuments()
             .then(data => {
-                setUserGoalsData(data);
+                setUserDocumentsData(data);
                 setLoading(false); 
             })
             .catch(err => {
@@ -22,5 +22,5 @@ export function useUserGoals() {
             });
     }, []);
 
-    return { userGoalsData, loading, error };
+    return { userDocumentsData, loading, error };
 }

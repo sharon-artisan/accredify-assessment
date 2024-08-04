@@ -1,4 +1,4 @@
-import DocumentsFeature from "../features/documents/index.jsx";
+import { ListDocuments } from "../features/documents/index.jsx";
 import React, { useEffect } from 'react';
 
 function Documents() {
@@ -13,7 +13,7 @@ function Documents() {
 				</div>
 
 				<div>
-					<DocumentsFeature />
+					<ListDocuments />
 				</div>
 			</div>
     );

@@ -4,8 +4,8 @@ import "@testing-library/jest-dom/extend-expect";
 import { BrowserRouter as Router } from "react-router-dom";
 import { MemoryRouter } from 'react-router';
 import ProgressGoal from "../ProgressGoal.jsx";
-import { useUserGoals } from "../../../../hooks/useUserGoals.js";
-jest.mock("../../../../hooks/useUserGoals.js");
+import { useUserGoals } from "../../hooks/useUserGoals.js";
+jest.mock("../../hooks/useUserGoals.js");
 
 const mockUserGoals = [
 	{

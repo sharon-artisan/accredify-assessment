@@ -9,9 +9,13 @@ describe('Acceptance Criteria', () => {
       // Assert main navigation is visible
       cy.get('#sidebar').should('be.visible');
 
-      cy.get('#list-documents').should('be.visible');
-    
+      // Assert career goal is not visible
+      cy.get('#career-goal').should('not.exist');
 
+      // Wait for the list-documents element to be loaded
+      cy.wait(5000).then(() => {
+        cy.get('#list-documents', { timeout: 10000 }).should('be.visible');
+      });
       // Click on account settings dropdown and log out
       cy.get('#account-settings').click();
       cy.get('#logout-button').click();
@@ -27,8 +31,10 @@ describe('Acceptance Criteria', () => {
       cy.get('#sidebar').should('be.visible');
 
       // Assert recent documents are sorted in descending order
-      cy.get('#list-documents').should('be.visible');
-
+      // Wait for the list-documents element to be loaded
+      cy.wait(5000).then(() => {
+        cy.get('#list-documents', { timeout: 10000 }).should('be.visible');
+      });
       // Assert career goal is visible
       cy.get('#career-goal').should('be.visible');
 

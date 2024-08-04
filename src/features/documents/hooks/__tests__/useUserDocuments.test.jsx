@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { useUserDocuments } from "../../hooks/useUserDocuments";
-import { getUserDocuments } from "../../services/dataServices.js";
+import { getUserDocuments } from "../../services/documentsServices.js";
 
-jest.mock("../../services/dataServices.js");
+jest.mock("../../services/documentsServices.js");
 
 const TestComponent = () => {
 	const { userDocumentsData, loading, error } = useUserDocuments();

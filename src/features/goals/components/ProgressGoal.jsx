@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { formatIndefiniteArticle } from "../../../utils/formatIndefiniteArticle.js";
-import { useUserGoals } from "../../../hooks/useUserGoals.js";
+import { useUserGoals } from "../hooks/useUserGoals.js";
 import { Tag } from "primereact/tag";
 import { ProgressSpinner } from 'primereact/progressspinner';
 

@@ -1,4 +1,4 @@
-import AuthenticationFeature from "../features/authentication/index.jsx";
+import { LoginForm } from "../features/authentication/index.jsx";
 import React, { useEffect } from 'react';
 
 function Login() {
@@ -14,7 +14,7 @@ function Login() {
 					<span className="home-title">Login</span>
 				</div>			
 			</div>
-			  <AuthenticationFeature />
+			  <LoginForm />
 		</div>
       </>
     );

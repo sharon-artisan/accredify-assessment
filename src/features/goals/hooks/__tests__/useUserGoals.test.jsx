@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { useUserGoals } from "../../hooks/useUserGoals";
-import { getUserCareerGoals } from "../../services/dataServices.js";
+import { useUserGoals } from "../useUserGoals.js";
+import { getUserCareerGoals } from "../../services/goalsServices.js";
 
-jest.mock("../../services/dataServices.js");
+jest.mock("../../services/goalsServices.js");
 
 const TestComponent = () => {
 	const { userGoalsData, loading, error } = useUserGoals();

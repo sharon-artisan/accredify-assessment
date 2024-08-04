@@ -2,10 +2,10 @@ import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import ListDocuments from "../ListDocuments.jsx";
-import { useUserDocuments } from "../../../../hooks/useUserDocuments.js";
+import { useUserDocuments } from "../../hooks/useUserDocuments.js";
 import { BrowserRouter as Router } from "react-router-dom";
 import { formatDate } from "../../../../utils/formatDate.js";
-jest.mock("../../../../hooks/useUserDocuments.js");
+jest.mock("../../hooks/useUserDocuments.js");
 
 const mockUserDocuments = [
 	{

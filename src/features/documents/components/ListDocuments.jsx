@@ -6,7 +6,7 @@ import documentFilledIcon from "../../../assets/icons/icon_documents_filled.svg"
 import kebabIcon from "../../../assets/icons/icon_kebab.svg";
 import { OverlayPanel } from "primereact/overlaypanel";
 import { Button } from "primereact/button";
-import { useUserDocuments } from "../../../hooks/useUserDocuments.js";
+import { useUserDocuments } from "../hooks/useUserDocuments.js";
 import { ProgressSpinner } from "primereact/progressspinner";
 import "../styles/ListDocuments.scss";
 

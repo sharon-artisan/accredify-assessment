@@ -1,7 +1,9 @@
-import HomeFeature from "../features/home/index.jsx";
+import { UserCircularProgress } from "../features/goals/index.jsx";
+import { ListDocuments } from "../features/documents/index.jsx";
 import React, { useEffect } from "react";
 import { useUserData } from "../hooks/useUserData.js";
 import { ProgressSpinner } from "primereact/progressspinner";
+
 function Home() {
 	useEffect(() => {
 		document.title = "Home | Accredify";
@@ -44,7 +46,26 @@ function Home() {
 						: "Manage your documents"}
 				</span>
 			</div>
-			<HomeFeature />
+
+			<div className="grid grid-cols-12 gap-6">
+				{!isPersonal && (
+					<div className="col-span-12 sm:col-span-4 lg:col-span-3">
+						<UserCircularProgress
+							showLink={true}
+							showDetails={false}
+						/>
+					</div>
+				)}
+
+				<div
+					className={`col-span-12 ${
+						isPersonal
+							? "lg:col-span-12"
+							: "sm:col-span-8 lg:col-span-9"
+					}`}>
+					<ListDocuments showLink={true} />
+				</div>
+			</div>
 		</div>
 	);
 }

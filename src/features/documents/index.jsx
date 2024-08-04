@@ -1,12 +1,14 @@
 /*
-	Everything related to documents is in this folder
+	Everything related to documents is in this folder to be exported
 */
-import RecentDocuments from "../documents/components/ListDocuments.jsx";
+import ListDocuments from "../documents/components/ListDocuments.jsx";
 
-export default function DocumentsFeature() {
+function DocumentsFeature() {
 	return (
 		<>
-			<RecentDocuments showLink={false} />
+			<ListDocuments showLink={false} />
 		</>
 	);
 }
+
+export { DocumentsFeature, ListDocuments }

@@ -1,4 +1,4 @@
-import GoalsFeature from "../features/goals/index.jsx";
+import { UserCircularProgress } from "../features/goals/index.jsx";
 import React, { useEffect } from "react";
 
 function Goals() {
@@ -14,7 +14,7 @@ function Goals() {
 				</div>
 
 				<div>
-					<GoalsFeature />
+					<UserCircularProgress showLink={false} showDetails={true}/>
 				</div>
 			</div>
 		</>

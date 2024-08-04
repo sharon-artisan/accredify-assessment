@@ -1,9 +1,14 @@
+/*
+	Everything related to goals is in this folder to be exported
+*/
 import UserCircularProgress from "../goals/components/ProgressGoal.jsx";
 
-export default function GoalsFeature() {
+function GoalsFeature() {
 	return (
 		<>
-			<UserCircularProgress showLink={false} showDetails={true} />
+			<UserCircularProgress />
 		</>
 	);
 }
+
+export { GoalsFeature, UserCircularProgress };
